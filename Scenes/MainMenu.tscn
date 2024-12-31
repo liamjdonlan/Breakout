@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdedhjiv1bur6"]
+
+[ext_resource type="Script" path="res://Scripts/MainMenuManager.gd" id="1_8nbbt"]
+[ext_resource type="Texture2D" uid="uid://cr2rg3sg57lru" path="res://Sprites/title.png" id="1_qhuab"]
+[ext_resource type="FontFile" uid="uid://c4yrrnndjrurn" path="res://Fonts/Pixeled.ttf" id="2_dsi6d"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="MainMenuManager" type="Node" parent="."]
+script = ExtResource("1_8nbbt")
+
+[node name="Background" type="ColorRect" parent="."]
+offset_right = 240.0
+offset_bottom = 135.0
+color = Color(0.109804, 0.0941176, 0.321569, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(120, 45)
+texture = ExtResource("1_qhuab")
+
+[node name="Text" type="Label" parent="."]
+offset_left = 41.0
+offset_top = 60.0
+offset_right = 211.0
+offset_bottom = 88.0
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("2_dsi6d")
+theme_override_font_sizes/font_size = 5
+text = "Use Left Arrow and Right Arrow to move
+Press Enter to start"
